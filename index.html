@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NyanPixel | Under Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1a1a1a;
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --accent: #444444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        /* Animasi Muncul */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header Style */
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background: var(--accent);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { border-color: #333; }
+            50% { border-color: #666; }
+            100% { border-color: #333; }
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            width: 60px;
+            background: #444;
+            margin: 40px auto;
+        }
+
+        /* Deskripsi Panjang */
+        .content {
+            text-align: justify;
+            color: var(--text-dim);
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        /* Footer / Contact */
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        /* Cursor Effect Minimalis */
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="badge">Coming Soon</div>
+        <h1 class="logo">NyanPixel<span class="dot"></span></h1>
+        
+        <div class="divider"></div>
+
+        <div class="content">
+            <p>
+                <strong>NyanPixel</strong> hadir sebagai sebuah revolusi dalam cara kita berbagi dan mengapresiasi karya visual. Terinspirasi dari dinamika platform berbagi video terbesar di dunia, kami membangun ekosistem yang didedikasikan sepenuhnya untuk dunia fotografi dan digital showcase. Di sini, setiap foto bukan sekadar file gambar, melainkan sebuah karya yang layak mendapatkan panggung utama. Kami bertujuan menciptakan komunitas global di mana fotografer amatir hingga profesional dapat menampilkan portofolio mereka dalam kualitas tertinggi tanpa kompromi.
+            </p>
+            <p>
+                Kami memahami bahwa dalam dunia visual, kecepatan dan kenyamanan adalah segalanya. Oleh karena itu, <strong>NyanPixel</strong> beroperasi di atas infrastruktur self-hosting yang dioptimalkan secara khusus untuk menangani aset gambar beresolusi tinggi dengan latensi rendah. Dengan teknologi server mandiri ini, kami menjamin pengalaman navigasi yang instan, pemuatan gambar yang kilat, dan stabilitas platform yang kokoh. Pengguna tidak akan lagi terganggu oleh iklan yang menutupi konten atau proses loading yang menghambat kreativitas.
+            </p>
+            <p>
+                Visi besar kami adalah menjadikan <strong>NyanPixel</strong> sebagai destinasi utama bagi siapa pun yang mencari inspirasi visual terbaik di internet. Dengan fitur showcase yang intuitif dan sistem distribusi konten yang cerdas, kami memastikan setiap karya mendapatkan jangkauan yang tepat kepada audiens yang relevan. Kami berkomitmen untuk terus menjaga privasi dan kenyamanan pengguna sebagai prioritas tertinggi, menciptakan rumah digital yang aman, cepat, dan elegan bagi seluruh pencinta seni pixel di seluruh dunia.
+            </p>
+        </div>
+
+        <div class="footer">
+            &copy; Made with Love by Nyantadev.
+        </div>
+    </div>
+
+</body>
+</html>
